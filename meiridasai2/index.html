@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>每日大赛吃瓜-大赛吃瓜每日更新_赛程热点_争议复盘_网友讨论</title>
+<meta name="description" content="每日大赛吃瓜聚焦各类大赛现场热点与争议话题，汇总每日赛程看点、选手表现、评分争议与网友讨论，帮你在每日大赛吃瓜中快速了解当天发生了什么、哪些值得追、哪些争议还在发酵。">
+<meta name="keywords" content="每日大赛吃瓜,大赛热点,赛程看点,争议复盘,网友讨论,每日更新">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231a1f2e'/%3E%3Ccircle cx='32' cy='32' r='16' fill='none' stroke='%23ffb648' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23ffb648'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0e1118;
+  --bg2:#141926;
+  --bg3:#1c2333;
+  --line:#2a3346;
+  --txt:#e8edf6;
+  --txt2:#a6b1c4;
+  --txt3:#77839a;
+  --acc:#ffb648;
+  --acc2:#ff7a59;
+  --blue:#5aa9ff;
+  --green:#4fd6a3;
+  --rad:14px;
+  --shadow:0 6px 24px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  font-size:15px;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 18px}
+section{padding:38px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:20px;flex-wrap:wrap}
+.sec-head h2{font-size:22px;letter-spacing:.5px;position:relative;padding-left:14px}
+.sec-head h2::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:4px;border-radius:4px;background:linear-gradient(180deg,var(--acc),var(--acc2))}
+.sec-head .sub{font-size:13px;color:var(--txt3)}
+.more{font-size:13px;color:var(--acc);border:1px solid rgba(255,182,72,.35);padding:5px 12px;border-radius:20px;transition:.2s}
+.more:hover{background:rgba(255,182,72,.12)}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(14,17,24,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:18px;height:62px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:17px;letter-spacing:.5px;flex-shrink:0}
+.logo .dot{width:26px;height:26px;border-radius:8px;background:conic-gradient(from 210deg,var(--acc),var(--acc2),var(--blue),var(--acc));display:flex;align-items:center;justify-content:center;font-size:13px;color:#10131b;font-weight:900}
+.nav-links{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{font-size:13.5px;color:var(--txt2);padding:7px 11px;border-radius:9px;white-space:nowrap;transition:.18s}
+.nav-links a:hover{color:var(--txt);background:var(--bg3)}
+.nav-cta{flex-shrink:0;font-size:13px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#171a22;font-weight:700;padding:8px 16px;border-radius:20px;transition:.2s}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(255,140,80,.28)}
+
+/* banner */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:
+  radial-gradient(900px 340px at 12% -10%,rgba(255,182,72,.16),transparent 60%),
+  radial-gradient(700px 320px at 88% 0%,rgba(90,169,255,.14),transparent 62%),
+  linear-gradient(180deg,#131826,#0e1118 82%)}
+.hero-in{padding:46px 0 40px}
+.hero .tagline{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--acc);border:1px solid rgba(255,182,72,.3);background:rgba(255,182,72,.08);padding:5px 13px;border-radius:20px;margin-bottom:16px}
+.hero .tagline b{width:6px;height:6px;border-radius:50%;background:var(--acc);display:inline-block;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+.hero h1{font-size:34px;line-height:1.28;letter-spacing:1px;margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--acc)}
+.hero p.lead{color:var(--txt2);font-size:15px;max-width:760px;margin-bottom:8px}
+.hero p.lead2{color:var(--txt3);font-size:14px;max-width:760px;margin-bottom:24px}
+.searchbar{display:flex;gap:10px;max-width:620px;margin-bottom:22px}
+.searchbar input{flex:1;background:var(--bg2);border:1px solid var(--line);color:var(--txt);border-radius:12px;padding:12px 16px;font-size:14px;outline:none;transition:.2s}
+.searchbar input:focus{border-color:rgba(255,182,72,.55);box-shadow:0 0 0 3px rgba(255,182,72,.1)}
+.searchbar button{background:linear-gradient(135deg,var(--acc),var(--acc2));border:none;color:#171a22;font-weight:700;font-size:14px;padding:0 24px;border-radius:12px;cursor:pointer;transition:.2s}
+.searchbar button:hover{filter:brightness(1.06)}
+.quick{display:flex;flex-wrap:wrap;gap:9px}
+.quick a{font-size:13px;color:var(--txt2);background:var(--bg2);border:1px solid var(--line);padding:7px 14px;border-radius:10px;transition:.18s}
+.quick a:hover{color:var(--acc);border-color:rgba(255,182,72,.4);transform:translateY(-2px)}
+
+/* stats strip */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.stat{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:var(--rad);padding:14px 16px}
+.stat b{display:block;font-size:21px;color:var(--acc);letter-spacing:.5px}
+.stat span{font-size:12.5px;color:var(--txt3)}
+
+/* generic cards */
+.grid{display:grid;gap:16px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rad);padding:18px;transition:.22s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-4px);border-color:rgba(255,182,72,.35);box-shadow:var(--shadow)}
+.card .cover{height:96px;border-radius:10px;margin-bottom:13px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:rgba(255,255,255,.85);letter-spacing:2px;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.card h3{font-size:15.5px;margin-bottom:8px;line-height:1.45}
+.card h3 a:hover{color:var(--acc)}
+.card p{font-size:13px;color:var(--txt2);line-height:1.7;margin-bottom:11px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.tag{font-size:11.5px;color:var(--txt2);background:var(--bg3);border:1px solid var(--line);padding:2px 9px;border-radius:20px}
+.tag.hot{color:var(--acc2);border-color:rgba(255,122,89,.35);background:rgba(255,122,89,.08)}
+.meta{display:flex;gap:14px;font-size:12px;color:var(--txt3);flex-wrap:wrap}
+.meta b{color:var(--acc);font-weight:600}
+
+/* intro */
+.intro-grid{display:grid;grid-template-columns:1.55fr 1fr;gap:26px}
+.intro-txt p{color:var(--txt2);font-size:14.5px;margin-bottom:14px}
+.intro-txt p strong{color:var(--txt);font-weight:600}
+.intro-side{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rad);padding:20px}
+.intro-side h3{font-size:15px;margin-bottom:12px;color:var(--acc)}
+.intro-side ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.intro-side li{font-size:13px;color:var(--txt2);padding-left:16px;position:relative}
+.intro-side li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:2px;background:var(--blue);opacity:.8}
+
+/* live update list */
+.updates{display:flex;flex-direction:column;gap:10px}
+.upd{display:flex;gap:14px;align-items:flex-start;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:13px 16px;transition:.2s}
+.upd:hover{border-color:rgba(90,169,255,.35);background:var(--bg3)}
+.upd .time{flex-shrink:0;font-size:12px;color:var(--acc);font-weight:700;width:52px;letter-spacing:.3px}
+.upd .txt{font-size:13.5px;color:var(--txt2)}
+.upd .txt b{color:var(--txt);font-weight:600}
+
+/* category */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cat{display:flex;align-items:center;gap:12px;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 16px;transition:.2s}
+.cat:hover{transform:translateY(-3px);border-color:rgba(79,214,163,.4)}
+.cat .ico{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;background:var(--bg3);flex-shrink:0}
+.cat .nm{font-size:14px;font-weight:600}
+.cat .dc{font-size:11.5px;color:var(--txt3)}
+
+/* deep article */
+.article{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rad);padding:28px}
+.article h3{font-size:17px;margin:22px 0 12px;color:var(--acc);letter-spacing:.4px}
+.article h3:first-child{margin-top:0}
+.article p{font-size:14.5px;color:var(--txt2);margin-bottom:14px;line-height:1.85}
+.article p strong{color:var(--txt);font-weight:600}
+.article blockquote{border-left:3px solid var(--acc);background:rgba(255,182,72,.06);padding:12px 16px;border-radius:0 10px 10px 0;font-size:13.5px;color:var(--txt2);margin:16px 0}
+
+/* guide */
+.guide{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.guide .card .num{font-size:12px;color:var(--acc);font-weight:800;letter-spacing:1px;margin-bottom:8px}
+
+/* faq */
+.faq{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.q{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.q h3{font-size:14.5px;margin-bottom:8px;color:var(--txt);display:flex;gap:8px;align-items:flex-start}
+.q h3 i{font-style:normal;color:var(--acc);font-weight:800;flex-shrink:0}
+.q p{font-size:13px;color:var(--txt2);line-height:1.75}
+
+/* comments */
+.cmts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.cmt{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.cmt .top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.cmt .av{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#12151d;flex-shrink:0}
+.cmt .nm{font-size:13px;font-weight:600}
+.cmt .dt{font-size:11.5px;color:var(--txt3);margin-left:auto}
+.cmt p{font-size:13px;color:var(--txt2)}
+.cmt p em{font-style:normal;color:var(--acc)}
+
+/* news */
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.news .card .dt{font-size:12px;color:var(--txt3);margin-bottom:8px}
+
+/* subscribe */
+.sub{background:linear-gradient(135deg,rgba(255,182,72,.12),rgba(90,169,255,.1));border:1px solid rgba(255,182,72,.25);border-radius:18px;padding:32px;text-align:center}
+.sub h2{font-size:22px;margin-bottom:10px}
+.sub p{color:var(--txt2);font-size:14px;margin-bottom:20px}
+.sub form{display:flex;gap:10px;max-width:480px;margin:0 auto}
+.sub input{flex:1;background:rgba(14,17,24,.7);border:1px solid var(--line);color:var(--txt);border-radius:10px;padding:11px 15px;font-size:14px;outline:none}
+.sub button{background:linear-gradient(135deg,var(--acc),var(--acc2));border:none;color:#171a22;font-weight:700;padding:0 22px;border-radius:10px;cursor:pointer}
+
+/* footer */
+footer{border-top:1px solid var(--line);background:var(--bg2);padding:36px 0 26px;margin-top:20px}
+.foot{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:28px;margin-bottom:26px}
+.foot h4{font-size:14px;margin-bottom:12px;color:var(--txt)}
+.foot p{font-size:12.5px;color:var(--txt3);line-height:1.8}
+.foot ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.foot ul a{font-size:12.5px;color:var(--txt3);transition:.18s}
+.foot ul a:hover{color:var(--acc)}
+.copy{border-top:1px solid var(--line);padding-top:18px;font-size:12px;color:var(--txt3);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+@media(max-width:960px){
+  .g3,.g4,.cats,.guide,.news,.foot{grid-template-columns:repeat(2,1fr)}
+  .intro-grid,.faq,.cmts{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .hero h1{font-size:27px}
+}
+@media(max-width:600px){
+  .g3,.g4,.g2,.cats,.guide,.news,.foot{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .hero-in{padding:34px 0 30px}
+  .hero h1{font-size:23px}
+  .searchbar{flex-direction:column}
+  .searchbar button{padding:12px}
+  .article{padding:20px}
+  section{padding:28px 0}
+  .sub{padding:24px 18px}
+  .sub form{flex-direction:column}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ============ 导航 ============ -->
+<header class="nav">
+  <div class="wrap nav-in">
+    <div class="logo"><span class="dot">吃</span>每日大赛吃瓜</div>
+    <nav class="nav-links">
+      <a href="/#hot-today">今日热点</a>
+      <a href="/#latest-update">最新更新</a>
+      <a href="/#category-zone">赛事分类</a>
+      <a href="/#deep-read">深度复盘</a>
+      <a href="/#guide-zone">围观指南</a>
+      <a href="/#faq-zone">常见问题</a>
+      <a href="/#comment-zone">网友讨论</a>
+      <a href="/#news-zone">赛事资讯</a>
+    </nav>
+    <a class="nav-cta" href="/#sub-zone">订阅今日瓜</a>
+  </div>
+</header>
+
+<!-- ============ 首屏 Banner ============ -->
+<div class="hero">
+  <div class="wrap hero-in">
+    <span class="tagline"><b></b>2026年11月7日 · 今日瓜已更新 38 条</span>
+    <h1>每日大赛吃瓜：<em>每天一场大赛</em>，把热闹看明白</h1>
+    <p class="lead">每日大赛吃瓜汇总各类大赛现场的第一手动态：谁晋级、谁爆冷、评分为什么被打低、弹幕和评论区又在吵什么。</p>
+    <p class="lead2">不做情绪搬运，只把赛程、看点、争议和后续进展按时间线摊开，让你三分钟跟上今天的大赛吃瓜进度。</p>
+    <div class="searchbar">
+      <input type="text" placeholder="搜索赛事名称 / 选手 / 争议关键词，例如：评委打分、半决赛">
+      <button type="button">搜一搜</button>
+    </div>
+    <div class="quick">
+      <a href="/#hot-today">今日必看</a>
+      <a href="/#latest-update">实时更新</a>
+      <a href="/#category-zone">按赛事分类</a>
+      <a href="/#deep-read">争议复盘</a>
+      <a href="/#data-board">数据看板</a>
+      <a href="/#faq-zone">新瓜答疑</a>
+      <a href="/#comment-zone">评论区</a>
+      <a href="/#news-zone">赛事资讯</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>38</b><span>今日更新条目</span></div>
+      <div class="stat"><b>12</b><span>覆盖大赛类型</span></div>
+      <div class="stat"><b>4.8</b><span>围观体验评分</span></div>
+      <div class="stat"><b>2.6w</b><span>今日讨论人次</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 内容简介 ============ -->
+<section id="intro-zone">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>每日大赛吃瓜是什么：一个把大赛看明白的入口</h2>
+      <span class="sub">内容简介 · 约 450 字</span>
+    </div>
+    <div class="intro-grid">
+      <div class="intro-txt">
+        <p><strong>每日大赛吃瓜</strong>并不是简单地堆砌热搜词条，而是针对「今天有哪些大赛正在进行、发生了哪些值得讨论的事」这一需求，做结构化整理。很多人打开手机的第一反应是刷一圈，但刷完之后常常只记住一个情绪化的片段，不知道前因后果，也不清楚哪个说法是真的。这个页面要解决的正是这个问题：把散落在各处的赛程进度、选手表现、评分争议、观众反应，按事件和时间重新串起来。</p>
+        <p>适合的受众大致有三类。第一类是<strong>轻量围观者</strong>，每天只想花五到十分钟知道今天的大赛吃了什么瓜，不需要看完整回放，但想知道争议点在哪。第二类是<strong>深度追赛者</strong>，已经在追某个赛事，需要一个能补全背景、对比不同观点的复盘入口。第三类是<strong>内容创作者和讨论参与者</strong>，需要找到有据可查的时间线和关键节点，避免在评论区说错话。</p>
+        <p>页面提供的参考价值主要在三块：一是<strong>每日更新的动态列表</strong>，把赛程、结果、争议按时间排好；二是<strong>深度解析正文</strong>，解释一场大赛为什么会出现某种争议，评分机制、赛制设计、观众预期各自起了什么作用；三是<strong>网友讨论与FAQ</strong>，把高频疑问集中回答，减少重复猜测。</p>
+        <p>值得收藏的原因也很直接：大赛是有周期的，今天的争议往往会在几天后出现反转或补充信息。把<strong>每日大赛吃瓜</strong>加入收藏，等于给自己留了一条可以随时回看的线索，而不是每次都要从头翻聊天记录和短视频评论区。对于想持续跟进同一类大赛的人来说，这种可回看、可对比的结构，比一次性刷完更有用。</p>
+      </div>
+      <aside class="intro-side">
+        <h3>这个页面适合谁</h3>
+        <ul>
+          <li>每天只想快速了解大赛热点的轻量围观者</li>
+          <li>正在追某个赛事、需要补背景的深度观众</li>
+          <li>想在评论区理性讨论、需要事实依据的人</li>
+          <li>做内容搬运前想先核对时间线的创作者</li>
+          <li>对赛制、评分机制好奇的规则党</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 热门推荐 ============ -->
+<section id="hot-today">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>今日热门大赛瓜 · 值得先看的 9 条</h2>
+      <a class="more" href="/#latest-update">查看全部更新</a>
+    </div>
+    <div class="grid g3">
+      <article class="card">
+        <div class="cover" style="background:linear-gradient(135deg,#3a2a5e,#6b4bb8)">半决赛现场</div>
+        <h3><a href="/#deep-read">半决赛压分争议：评委给出全场最低分</a></h3>
+        <div class="tags"><span class="tag hot">争议</span><span class="tag">评分</span><span class="tag">半决赛</span></div>
+        <p>选手完成度不低，却拿到全场最低分，评委给出的理由是「风格偏离赛题」。评论区已经分成两派，争论焦点在赛题解释权归谁。</p>
+        <div class="meta"><span>热度 <b>9.6</b></span><span>讨论 <b>3.2k</b></span><span>2 小时前</span></div>
+      </article>
+      <article class="card">
+        <div class="cover" style="background:linear-gradient(135deg,#1f4a52,#2f8f86)">黑马晋级</div>
+        <h3><a href="/#latest-update">黑马选手逆袭晋级，赛前排名仅第 27</a></h3>
+        <div class="tags"><span class="tag hot">爆冷</span><span class="tag">晋级</span><span class="tag">黑马</span></div>
+        <p>预赛排名靠后的选手在淘汰轮连续两场高分，直接挤进八强。赛后采访只说了一句「按自己节奏来」，反而圈了一波路人缘。</p>
+        <div class="meta"><span>热度 <b>9.1</b></span><span>讨论 <b>2.4k</b></span><span>3 小时前</span></div>
+      </article>
+      <article class="card">
+        <div class="cover" style="background:linear-gradient(135deg,#5e2a2a,#b8543c)">赛制调整</div>
+        <h3><a href="/#deep-read">赛制临时微调，复活名额从 2 个加到 3 个</a></h3>
+        <div class="tags"><span class="tag">赛制</span><span class="tag">规则</span><span class="tag hot">突发</span></div>
+        <p>主办方在赛前 6 小时公布复活名额调整，理由是「平衡各组实力差距」。有队伍认为这对已淘汰选手不公平，也有人觉得增加了可看性。</p>
+        <div class="meta"><span>热度 <b>8.7</b></span><span>讨论 <b>1.9k</b></span><span>5 小时前</span></div>
+      </article>
+      <article class="card">
+        <div class="cover" style="background:linear-gradient(135deg,#2c3e6e,#4f74c9)">现场失误</div>
+        <h3><a href="/#latest-update">决赛热门现场失误，赛后主动发文说明</a></h3>
+        <div class="tags"><span class="tag">失误</span><span class="tag">决赛</span><span class="tag">回应</span></div>
+        <p>关键环节出现明显失误，分数直接掉出前三。当事人当晚发文承认准备不足，评论区从嘲讽逐渐转向鼓励，风向在 12 小时内明显变化。</p>
+        <div class="meta"><span>热度 <b>8.5</b></span><span>讨论 <b>2.1k</b></span><span>昨天</span></div>
+      </article>
+      <article class="card">
+        <div class="cover" style="background:linear-gradient(135deg,#4a3a1c,#a07c2c)">评委表态</div>
+        <h3><a href="/#deep-read">评委长文解释打分逻辑，反而引发新讨论</a></h3>
+        <div class="tags"><span class="tag">评委</span><span class="tag hot">回应</span><span class="tag">打分</span></div>
+        <p>一篇两千字的打分说明，本意是平息争议，结果因为「权重描述前后不一致」被网友逐条对照，讨论热度不降反升。</p>
+        <div class="meta"><span>热度 <b>8.3</b></span><span>讨论 <b>1.6k</b></span><span>昨天</span></div>
+      </article>
+      <article class="card">
+        <div class="cover" style="background:linear-gradient(135deg,#2a4a3a,#3f9c74)">新赛区</div>
+        <h3><a href="/#category-zone">新增分赛区公布，报名门槛比主赛区低一档</a></h3>
+        <div class="tags"><span class="tag">赛区</span><span class="tag">报名</span><span class="tag">新规</span></div>
+        <p>新赛区主打「降低参与门槛」，但晋级名额和主赛区共享，有老选手担心整体竞争强度被稀释，主办方暂未回应。</p>
+        <div class="meta"><span>热度 <b>7.9</b></span><span>讨论 <b>1.1k</b></span><span>2 天前</span></div>
+      </article>
+      <article class="card">
+        <div class="cover" style="background:linear-gradient(135deg,#3d2c4a,#8a5cae)">观众投票</div>
+        <h3><a href="/#comment-zone">观众投票环节被质疑刷票，官方公布后台数据</a></h3>
+        <div class="tags"><span class="tag hot">投票</span><span class="tag">数据</span><span class="tag">质疑</span></div>
+        <p>某选手票数在半小时内异常上涨，官方随后公布分时段投票曲线，解释为「集中拉票」，但仍有网友认为曲线过于陡峭。</p>
+        <div class="meta"><span>热度 <b>7.8</b></span><span>讨论 <b>1.4k</b></span><span>2 天前</span></div>
+      </article>
+      <article class="card">
+        <div class="cover" style="background:linear-gradient(135deg,#1c3a4a,#2f7ea0)">赛程延期</div>
+        <h3><a href="/#news-zone">因场地原因延期一天，赛程压缩至三天打完</a></h3>
+        <div class="tags"><span class="tag">延期</span><span class="tag">赛程</span><span class="tag">场地</span></div>
+        <p>延期公告发布后，部分选手的备战节奏被打乱。压缩后的赛程意味着部分队伍要连续作战，体力分配成了新的讨论点。</p>
+        <div class="meta"><span>热度 <b>7.5</b></span><span>讨论 <b>980</b></span><span>3 天前</span></div>
+      </article>
+      <article class="card">
+        <div class="cover" style="background:linear-gradient(135deg,#4a2c2c,#a04a4a)">老将回归</div>
+        <h3><a href="/#latest-update">退役两年的老将报名参赛，首场表现超出预期</a></h3>
+        <div class="tags"><span class="tag">老将</span><span class="tag">回归</span><span class="tag hot">情怀</span></div>
+        <p>赛前被普遍看低，首场却拿到中上评分。评论区一半在怀旧，一半在讨论「情怀分」是否影响了客观评价。</p>
+        <div class="meta"><span>热度 <b>7.3</b></span><span>讨论 <b>860</b></span><span>3 天前</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 最新更新 ============ -->
+<section id="latest-update">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>最新更新 · 今日大赛吃瓜时间线</h2>
+      <span class="sub">按时间倒序 · 2026年11月7日</span>
+    </div>
+    <div class="updates">
+      <div class="upd"><span class="time">21:40</span><span class="txt"><b>半决赛第二组</b>成绩公布，前两名分差仅 0.3 分，第三名因细节扣分无缘晋级。</span></div>
+      <div class="upd"><span class="time">20:15</span><span class="txt"><b>评委组</b>就压分争议发布简短说明，称评分标准赛前已公示，未提及是否复核。</span></div>
+      <div class="upd"><span class="time">19:02</span><span class="txt"><b>黑马选手</b>赛后采访片段传播，单条短视频点赞破 10 万，评论区出现大量「路转粉」。</span></div>
+      <div class="upd"><span class="time">17:48</span><span class="txt"><b>赛制调整</b>公告正式挂出，复活名额从 2 个增加到 3 个，已有两支队伍提交复活申请。</span></div>
+      <div class="upd"><span class="time">16:30</span><span class="txt"><b>观众投票</b>通道关闭，官方称将在 24 小时内公布核验结果，异常票数将单独说明。</span></div>
+      <div class="upd"><span class="time">15:12</span><span class="txt"><b>决赛热门</b>选手训练花絮更新，状态看起来已恢复，是否影响最终成绩待观察。</span></div>
+      <div class="upd"><span class="time">13:55</span><span class="txt"><b>新赛区</b>报名页面开放首小时，报名人数超过主办方预期的两倍，服务器一度卡顿。</span></div>
+      <div class="upd"><span class="time">12:20</span><span class="txt"><b>延期赛程</b>补偿方案公布，受影响队伍可申请一次额外的适应场地时间。</span></div>
+      <div class="upd"><span class="time">10:06</span><span class="txt"><b>老将回归</b>首场评分明细流出，技术分中等、完成度分偏高，成为讨论焦点。</span></div>
+      <div class="upd"><span class="time">09:18</span><span class="txt"><b>今日赛程</b>共 6 场，其中 3 场为淘汰轮，2 场涉及晋级名额，围观人数预计创新高。</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 分类入口 ============ -->
+<section id="category-zone">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>赛事分类 · 按你想吃瓜的角度找</h2>
+      <span class="sub">8 个入口 · 覆盖不同观赛需求</span>
+    </div>
+    <div class="cats">
+      <a class="cat" href="/#deep-read"><span class="ico">⚖️</span><span><span class="nm">评分争议</span><br><span class="dc">打分逻辑与评委表态</span></span></a>
+      <a class="cat" href="/#latest-update"><span class="ico">🔥</span><span><span class="nm">爆冷逆袭</span><br><span class="dc">黑马与低开高走</span></span></a>
+      <a class="cat" href="/#news-zone"><span class="ico">📅</span><span><span class="nm">赛程变动</span><br><span class="dc">延期、压缩与调整</span></span></a>
+      <a class="cat" href="/#comment-zone"><span class="ico">💬</span><span><span class="nm">网友讨论</span><br><span class="dc">评论区风向与分化</span></span></a>
+      <a class="cat" href="/#deep-read"><span class="ico">📐</span><span><span class="nm">赛制规则</span><br><span class="dc">晋级、复活与权重</span></span></a>
+      <a class="cat" href="/#hot-today"><span class="ico">🎯</span><span><span class="nm">选手表现</span><br><span class="dc">临场状态与失误</span></span></a>
+      <a class="cat" href="/#news-zone"><span class="ico">🗳️</span><span><span class="nm">投票与数据</span><br><span class="dc">票数曲线与核验</span></span></a>
+      <a class="cat" href="/#faq-zone"><span class="ico">🧭</span><span><span class="nm">新瓜入门</span><br><span class="dc">术语与围观顺序</span></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 深度解析 ============ -->
+<section id="deep-read">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>深度解析 · 一场大赛的争议是怎么形成的</h2>
+      <span class="sub">编辑复盘 · 约 850 字</span>
+    </div>
+    <article class="article">
+      <h3>为什么评分争议总是最先爆</h3>
+      <p>在所有大赛吃瓜话题里，评分争议的传播速度几乎总是最快的。原因并不复杂：成绩是唯一一个所有人都能立刻看到的数字，而数字很容易被拿来比较。<strong>每日大赛吃瓜</strong>里最常见的场景是，A 选手和 B 选手的完成度在普通观众眼里差别不大，分数却差了整整一档，这种落差会立刻触发「是不是有问题」的直觉判断。</p>
+      <p>但真正去看评分表会发现，争议往往不是出在某个评委「乱打分」，而是出在<strong>权重设计</strong>上。很多大赛把技术分、完成度分、创意分按不同比例折算，创意分权重高的赛事，风格偏离赛题就会被扣得很重；完成度权重高的赛事，反而更看重稳定。观众默认的「谁表现好谁分高」，和赛制里的「谁更符合赛题谁分高」，其实是两套逻辑。当这两套逻辑撞在一起，争议就出现了。</p>
+      <h3>赛制调整为什么容易引发不满</h3>
+      <p>这次复活名额从 2 个加到 3 个，看上去是「给更多人机会」，但不满的声音同样真实。对已经被淘汰的选手来说，规则在赛程中途变化，意味着他们当时的策略选择可能不再是最优解；对已经晋级的选手来说，多一个复活名额等于多一个潜在竞争者。<strong>每日大赛吃瓜</strong>在整理这类事件时，会特别标注公告时间点，因为「什么时候改」比「改了什么」更能说明问题：赛前改是设计，赛中改是应变，而应变总会让一部分人觉得自己被牺牲了。</p>
+      <blockquote>规则本身很难让所有人满意，但规则的透明度可以。观众能接受严格，很难接受模糊。</blockquote>
+      <h3>选手表现：临场状态被低估的部分</h3>
+      <p>围观者习惯用「实力」解释一切，但大赛现场有大量非实力因素。延期导致备战节奏被打乱、压缩赛程带来的连续作战、场地适应时间不足，这些都会直接反映在完成度上。这次延期后赛程压缩到三天，部分队伍要连续上场，体力分配立刻成了新的变量。<strong>每日大赛吃瓜</strong>在跟踪选手表现时，会把这类外部条件和成绩放在一起看，而不是简单归因为「状态不行」。</p>
+      <p>另一个被低估的是失误后的心理恢复。决赛热门选手在关键环节失误后，当晚主动发文说明，评论区风向在 12 小时内从嘲讽转向鼓励。这种转向并不只是因为「态度好」，更因为观众在补充信息后，对失误的性质有了新的理解——是准备不足，还是临场意外，观感完全不同。</p>
+      <h3>观众投票与数据可信度</h3>
+      <p>只要大赛设置观众投票，就一定会有人质疑刷票。这次票数在半小时内异常上涨，官方公布分时段曲线解释为集中拉票，但曲线过于陡峭，仍然难以说服所有人。<strong>每日大赛吃瓜</strong>在呈现这类内容时，会同时列出官方说明和网友质疑的具体点，而不是只给结论。对普通围观者来说，知道「争议在哪」比知道「谁对谁错」更实用，因为后续很可能还有补充数据。</p>
+      <h3>同类大赛之间的比较</h3>
+      <p>把不同大赛放在一起看，会发现争议高发的赛事通常有两个共同点：评分维度多、观众参与度高。维度越多，解释空间越大；参与度越高，情绪越容易被放大。反过来，规则简单、评分维度少的赛事，争议往往集中在个别失误上，很少演变成对赛制本身的讨论。这也是为什么<strong>每日大赛吃瓜</strong>会按赛事类型分类整理，而不是把所有瓜混在一起——不同类型的争议，成因和解法都不一样。</p>
+      <p>最后要说的是，围观大赛吃瓜并不需要站队。把时间线、规则、官方说明和网友质疑摆在一起，很多看起来离谱的事情会变得可以理解，很多看起来合理的解释也会露出漏洞。这种「先看清再判断」的习惯，才是这个页面最想提供的价值。</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 数据看板 ============ -->
+<section id="data-board">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>数据看板 · 今日围观热度分布</h2>
+      <span class="sub">模拟统计 · 仅供参考</span>
+    </div>
+    <div class="grid g4">
+      <div class="card"><h3>评分争议</h3><p>今日相关讨论占比最高，集中在半决赛压分与评委长文回应。</p><div class="meta"><span>占比 <b>34%</b></span><span>环比 <b>+12%</b></span></div></div>
+      <div class="card"><h3>爆冷逆袭</h3><p>黑马晋级话题持续发酵，赛后采访片段带动二次传播。</p><div class="meta"><span>占比 <b>26%</b></span><span>环比 <b>+8%</b></span></div></div>
+      <div class="card"><h3>赛制规则</h3><p>复活名额调整引发规则讨论，公告时间点成为焦点。</p><div class="meta"><span>占比 <b>22%</b></span><span>环比 <b>+15%</b></span></div></div>
+      <div class="card"><h3>选手动态</h3><p>失误回应与老将回归两条线并行，情绪浓度较高。</p><div class="meta"><span>占比 <b>18%</b></span><span>环比 <b>-3%</b></span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 围观指南 ============ -->
+<section id="guide-zone">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>围观指南 · 怎么高效跟上每日大赛吃瓜</h2>
+      <span class="sub">6 条实用建议</span>
+    </div>
+    <div class="guide">
+      <div class="card"><div class="num">01</div><h3>先看时间线，再看观点</h3><p>事件顺序决定了因果，先搞清楚「什么时候发生了什么」，再去看评论区的判断，能避开大部分情绪化误导。</p></div>
+      <div class="card"><div class="num">02</div><h3>区分官方说明与网友推测</h3><p>官方说明通常有明确时间和署名，网友推测往往带「据说」「疑似」。两类信息价值不同，不要混着用。</p></div>
+      <div class="card"><div class="num">03</div><h3>关注规则变化的时间点</h3><p>赛前改规则和赛中改规则，性质完全不同。看到调整公告，先确认发布时间，再判断是否合理。</p></div>
+      <div class="card"><div class="num">04</div><h3>别只看分数，看分项</h3><p>总分容易误导，分项才能看出问题在哪。技术分低还是完成度低，对应的解释完全不同。</p></div>
+      <div class="card"><div class="num">05</div><h3>给争议留出反转空间</h3><p>大赛争议经常在几天后补充新信息。当天看到的「实锤」，可能只是阶段性结论。</p></div>
+      <div class="card"><div class="num">06</div><h3>移动端收藏，随时回看</h3><p>把页面加入收藏，后续更新可以直接对照旧内容，比每次重新搜索更省时间。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq-zone">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>常见问题 · 关于每日大赛吃瓜的高频疑问</h2>
+      <span class="sub">6 个问答</span>
+    </div>
+    <div class="faq">
+      <div class="q"><h3><i>Q1</i>每日大赛吃瓜主要更新哪些内容？</h3><p>主要覆盖赛程进度、选手表现、评分争议、赛制调整、投票数据与网友讨论六个方向。每天的更新以时间线形式排列，重点事件会单独做深度复盘，方便你从「知道发生了什么」过渡到「理解为什么发生」。</p></div>
+      <div class="q"><h3><i>Q2</i>我不追完整比赛，只看这个页面够吗？</h3><p>对于轻量围观者基本够用。页面会保留关键节点和争议核心，省略过程细节。但如果你想判断选手的真实水平，还是建议看至少一场完整回放，因为片段和文字描述容易丢失临场感。</p></div>
+      <div class="q"><h3><i>Q3</i>评分争议到底该怎么看？</h3><p>先看评分维度和权重，再看分项得分，最后看评委说明是否与规则一致。如果说明和规则对不上，争议就有依据；如果只是观众预期和赛制逻辑不同，那更多是理解差异，而非操作问题。</p></div>
+      <div class="q"><h3><i>Q4</i>赛制中途调整是不是一定不合理？</h3><p>不一定。突发情况下调整赛制有其现实原因，关键在于是否公开、是否给受影响方补偿、是否在合理时间点公布。这次复活名额调整给出了补偿方案，但对已淘汰选手的策略影响仍然存在，所以争议没有完全平息。</p></div>
+      <div class="q"><h3><i>Q5</i>观众投票的数据可信吗？</h3><p>官方公布的分时段曲线是目前最直接的参考，但曲线只能说明票数变化，不能完全排除组织化拉票。建议把投票结果当作参考项，而不是唯一判断依据，尤其是票数差距很小的环节。</p></div>
+      <div class="q"><h3><i>Q6</i>类似的大赛还有哪些值得关注？</h3><p>可以按分类入口去找同类赛事，评分维度多、观众参与度高的赛事争议通常更集中。如果你想看规则更清晰、争议更少的类型，可以优先关注评分维度少、赛程稳定的赛事。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 网友评论 ============ -->
+<section id="comment-zone">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>网友讨论 · 今日大赛吃瓜评论区</h2>
+      <span class="sub">近 30 天 · 16 条</span>
+    </div>
+    <div class="cmts">
+      <div class="cmt"><div class="top"><span class="av" style="background:#ffb648">橙</span><span class="nm">橘子汽水不冰</span><span class="dt">11-07</span></div><p>半决赛那个分差真的只有 0.3 吗，看着不像啊，是不是分项权重的问题。</p></div>
+      <div class="cmt"><div class="top"><span class="av" style="background:#5aa9ff">蓝</span><span class="nm">看台第七排</span><span class="dt">11-07</span></div><p>黑马那场我看了回放，节奏确实稳，不是运气。赛前排名低可能只是预赛没发力。</p></div>
+      <div class="cmt"><div class="top"><span class="av" style="background:#4fd6a3">绿</span><span class="nm">规则研究所</span><span class="dt">11-07</span></div><p>复活名额这个调整时间点太尴尬了，赛前改没人说，赛中改肯定有意见。</p></div>
+      <div class="cmt"><div class="top"><span class="av" style="background:#ff7a59">红</span><span class="nm">不吃香菜谢谢</span><span class="dt">11-06</span></div><p>评委那篇长文我逐条看了，前面说权重固定，后面又说酌情，确实自相矛盾。</p></div>
+      <div class="cmt"><div class="top"><span class="av" style="background:#b98cff">紫</span><span class="nm">深夜补赛人</span><span class="dt">11-06</span></div><p>决赛热门失误那事，我觉得回应态度还可以，至少没甩锅，比装没事强。</p></div>
+      <div class="cmt"><div class="top"><span class="av" style="background:#ffb648">橙</span><span class="nm">一颗大柚子</span><span class="dt">11-06</span></div><p>投票曲线那个图确实陡，但拉票群集中投也会这样，不好直接下结论。</p></div>
+      <div class="cmt"><div class="top"><span class="av" style="background:#5aa9ff">蓝</span><span class="nm">冷静围观选手</span><span class="dt">11-05</span></div><p>每天来这里看一眼时间线就够了，评论区比短视频靠谱，至少有人贴出处。</p></div>
+      <div class="cmt"><div class="top"><span class="av" style="background:#4fd6a3">绿</span><span class="nm">赛程观察员</span><span class="dt">11-05</span></div><p>延期压缩到三天，连续作战对体力要求太高了，后面肯定还会出状况。</p></div>
+      <div class="cmt"><div class="top"><span class="av" style="background:#ff7a59">红</span><span class="nm">老观众阿凯</span><span class="dt">11-05</span></div><p>老将回归首场那个完成度分偏高吧，情怀加成太明显了，技术分才是真实水平。</p></div>
+      <div class="cmt"><div class="top"><span class="av" style="background:#b98cff">紫</span><span class="nm">不吃瓜只喝水</span><span class="dt">11-04</span></div><p>新赛区门槛低是好事，但名额共享这点没说清楚，感觉后面还要改。</p></div>
+      <div class="cmt"><div class="top"><span class="av" style="background:#ffb648">橙</span><span class="nm">半糖去冰</span><span class="dt">11-04</span></div><p>说真的，有些争议就是观众不懂规则，赛题写得明明白白，风格偏离就是会扣分。</p></div>
+      <div class="cmt"><div class="top"><span class="av" style="background:#5aa9ff">蓝</span><span class="nm">回放党小周</span><span class="dt">11-03</span></div><p>建议新来的先看深度解析那篇，看完再进评论区，不然容易被带节奏。</p></div>
+      <div class="cmt"><div class="top"><span class="av" style="background:#4fd6a3">绿</span><span class="nm">数据不说话</span><span class="dt">11-03</span></div><p>分项得分表出来了，技术分其实不低，扣的是创意分，和赛题解释一致。</p></div>
+      <div class="cmt"><div class="top"><span class="av" style="background:#ff7a59">红</span><span class="nm">路过的猫</span><span class="dt">11-02</span></div><p>这页面更新挺快的，晚上刷完基本能跟上白天发生了什么，省事。</p></div>
+      <div class="cmt"><div class="top"><span class="av" style="background:#b98cff">紫</span><span class="nm">不站队星人</span><span class="dt">11-02</span></div><p>两边都别急着定论，等官方核验结果吧，去年类似的事最后反转了。</p></div>
+      <div class="cmt"><div class="top"><span class="av" style="background:#ffb648">橙</span><span class="nm">晚八点开看</span><span class="dt">11-01</span></div><p>希望后面能把每场的分项得分都整理出来，光看总分真的看不出问题。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 相关资讯 ============ -->
+<section id="news-zone">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>赛事资讯 · 与每日大赛吃瓜相关的动态</h2>
+      <a class="more" href="/#latest-update">更多更新</a>
+    </div>
+    <div class="news">
+      <div class="card"><div class="dt">2026-11-07</div><h3><a href="/#deep-read">半决赛评分争议持续，主办方称将复核分项数据</a></h3><p>主办方表示会在两日内公布分项复核结果，重点核查创意分权重是否按公示标准执行。</p></div>
+      <div class="card"><div class="dt">2026-11-07</div><h3><a href="/#latest-update">黑马选手晋级八强，赛后采访片段播放量破百万</a></h3><p>一段不到一分钟的采访带动大量二次传播，相关话题讨论量在四小时内翻了三倍。</p></div>
+      <div class="card"><div class="dt">2026-11-06</div><h3><a href="/#news-zone">复活名额调整公告发布，两支队伍已提交申请</a></h3><p>公告发布后六小时内收到两份复活申请，审核标准与截止时间同步公开。</p></div>
+      <div class="card"><div class="dt">2026-11-06</div><h3><a href="/#comment-zone">观众投票核验结果将公布，异常票数单独说明</a></h3><p>官方称核验会区分正常拉票与异常波动，结果将在投票关闭后 24 小时内发布。</p></div>
+      <div class="card"><div class="dt">2026-11-05</div><h3><a href="/#news-zone">延期赛程补偿方案出台，受影响队伍可申请适应时间</a></h3><p>补偿以额外场地适应时间的形式发放，需在赛前 12 小时提交申请。</p></div>
+      <div class="card"><div class="dt">2026-11-04</div><h3><a href="/#category-zone">新赛区报名开放，首小时报名量超预期两倍</a></h3><p>报名页面一度卡顿，主办方延长了首日报名窗口，并说明名额分配规则。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 订阅 ============ -->
+<section id="sub-zone">
+  <div class="wrap">
+    <div class="sub">
+      <h2>订阅今日大赛吃瓜提醒</h2>
+      <p>每天固定时间推送当天最值得看的 3 条大赛动态，不刷屏，只留重点。</p>
+      <form onsubmit="return false">
+        <input type="text" placeholder="留下你的邮箱或昵称">
+        <button type="button">订阅</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 页脚 ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h4>每日大赛吃瓜</h4>
+        <p>一个把大赛热点、争议与讨论按时间线整理的内容入口。不做情绪搬运，只把事实、规则和观点分开放，方便你自己判断。</p>
+      </div>
+      <div>
+        <h4>栏目导航</h4>
+        <ul>
+          <li><a href="/#hot-today">今日热点</a></li>
+          <li><a href="/#latest-update">最新更新</a></li>
+          <li><a href="/#category-zone">赛事分类</a></li>
+          <li><a href="/#deep-read">深度复盘</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>围观帮助</h4>
+        <ul>
+          <li><a href="/#guide-zone">围观指南</a></li>
+          <li><a href="/#faq-zone">常见问题</a></li>
+          <li><a href="/#data-board">数据看板</a></li>
+          <li><a href="/#comment-zone">网友讨论</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>友情链接</h4>
+        <ul>
+          <li><a href="/#news-zone">赛事资讯站</a></li>
+          <li><a href="/#sub-zone">订阅中心</a></li>
+          <li><a href="/#intro-zone">内容简介</a></li>
+          <li><a href="/#faq-zone">纠错反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 每日大赛吃瓜 · 内容仅供围观参考</span>
+      <span>免责声明：页面内容为赛事讨论整理，不代表任何官方立场，具体信息以主办方公告为准。</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+  </html>
